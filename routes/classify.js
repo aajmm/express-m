@@ -10,5 +10,4 @@ router.get('/api/getCIcons', Classify.getCIcons);
 // 获取所有分类
 router.get('/api/getClassifys', Classify.getClassifys);
 
-
 module.exports = router;

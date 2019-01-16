@@ -14,7 +14,6 @@ function addClassify(req, res, next) {
                 res.json({ code: 4, msg: '该分类已存在' })
             } else {
                 mymongo1610.insert('classify_list', { cName: cName, cType: cType, cIcon: cIcon, uid: uid }, function(err, result) {
-                    // console.log(cName)
                     if (err) {
                         res.json({ code: 0, msg: 'error' })
                     } else {
